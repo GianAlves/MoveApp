@@ -12,7 +12,7 @@ export class LoginPage implements OnInit {
 
     private email: string = '';
     private password: string = '';
-    private loginIsCorrect: boolean = false;
+    loginIsCorrect: boolean = false;
 
     constructor(
         private fb: FormBuilder
