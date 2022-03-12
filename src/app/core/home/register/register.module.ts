@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RegisterPageRoutingModule } from './register-routing.module';
 
 import { RegisterPage } from './register.page';
+import { MvFormModule } from 'src/app/shared/components/mv-form/mv-form.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterPageRoutingModule
+    RegisterPageRoutingModule,
+    MvFormModule
   ],
   declarations: [RegisterPage]
 })
