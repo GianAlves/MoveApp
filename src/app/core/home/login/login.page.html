@@ -1,0 +1,33 @@
+<ion-content>
+    <div class="container">
+        <section>
+            <article>
+                <figure>
+                    <img src="./../../../../assets/img/login/woman_gym.png" alt="Woman Gym">
+                </figure>
+            </article>
+            <article>
+                <h1 class="">Move App</h1>
+                <small>Entre na sua conta para continuar</small>
+            </article>
+        </section>
+        <main>
+            <form (ngSubmit)="login()">
+                <mv-input type="email" label="Email" (value)="setEmail($event)"></mv-input>
+                <mv-input type="password" label="Senha" (value)="setPassword($event)"></mv-input>
+                <small>Esqueceu a senha?</small>
+                <div class="d-grid gap-2 col-6 mx-auto mt-2 mb-2">
+                    <button class="btn btn-primary" type="submit" [disabled]="!loginIsCorrect">Entrar</button>
+                </div>
+                <small>
+                    Não possui conta?
+                    <strong>
+                        <span [routerLink]="['/home/register']" class="mv-link-register">
+                            Crie uma agora!
+                        </span>
+                    </strong>
+                </small>
+            </form>
+        </main>
+    </div>
+</ion-content>
